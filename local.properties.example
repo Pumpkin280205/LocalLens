@@ -1,0 +1,8 @@
+# Copy this file to local.properties and add your World News API key.
+# Never commit local.properties to version control.
+#
+# How to get a key: https://worldnewsapi.com/docs/authentication/
+# Free tier gives you 1,000 requests/day — more than enough for development.
+#
+# Example:
+API_KEY=96be41f009404431840bb3c5cf57729a

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LocalLens</string>
+    <string name="home_title">LocalLens</string>
+    <string name="home_subtitle">News by your location</string>
+</resources>

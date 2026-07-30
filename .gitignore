@@ -1,0 +1,28 @@
+# Built files
+*.apk
+*.aab
+*.ap_
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Local configuration — API key lives here, never commit
+local.properties
+
+# IDE
+.idea/
+*.iml
+*.iws
+.DS_Store
+
+# OS
+Thumbs.db
+desktop.ini
+
+# Debug
+app/build/
+
+# GitHub
+.github/

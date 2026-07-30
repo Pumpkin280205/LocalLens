@@ -1,0 +1,81 @@
+[versions]
+agp = "8.7.2"
+kotlin = "2.0.0"
+composeBom = "2025.01.00"
+compileSdk = "35"
+targetSdk = "35"
+minSdk = "26"
+
+# Networking
+retrofit = "2.11.0"
+okhttp = "4.12.0"
+# Location
+playServicesLocation = "21.3.0"
+# Gson
+gson = "2.10.1"
+# Compose
+activityCompose = "1.9.3"
+lifecycleRuntimeCompose = "2.8.7"
+lifecycleViewModelCompose = "2.8.7"
+coilCompose = "3.2.0"
+coilNetworkOkhttp = "3.2.0"
+# Coroutines
+kotlinxCoroutines = "1.8.0"
+# Testing
+junit = "4.13.2"
+extJunit = "1.2.1"
+espressoCore = "3.6.1"
+composeUiTest = "1.7.0"
+
+[libraries]
+kotlin_stdlib = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib", version.ref = "kotlin" }
+
+# Retrofit + OkHttp
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
+okhttp_logging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp" }
+retrofit_converter_gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+
+# Gson
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
+
+# Location
+play_services_location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "playServicesLocation" }
+
+# Compose BOM
+androidx_compose_bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx_ui = { group = "androidx.compose.ui", name = "ui" }
+androidx_ui_graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx_ui_tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx_ui_tooling_preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx_material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx_material_icons_extended = { group = "androidx.compose.material", name = "material-icons-extended" }
+androidx_activity_compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx_lifecycle_runtime_compose = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "lifecycleRuntimeCompose" }
+androidx_lifecycle_viewmodel_compose = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "lifecycleViewModelCompose" }
+androidx_navigation_compose = { group = "androidx.navigation", name = "navigation-compose", version = "2.7.6" }
+
+# Core
+androidx_core_ktx = { group = "androidx.core", name = "core-ktx" }
+androidx_lifecycle_runtime_ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx" }
+
+# Image loading
+coil_compose = { group = "io.coil-kt.coil3", name = "coil-compose", version.ref = "coilCompose" }
+coil_network_okhttp = { group = "io.coil-kt.coil3", name = "coil-network-okhttp", version.ref = "coilNetworkOkhttp" }
+
+# Coroutines
+kotlinx_coroutines_android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlinxCoroutines" }
+kotlinx_coroutines_core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinxCoroutines" }
+
+# Testing
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext_junit = { group = "androidx.test.ext", name = "junit", version.ref = "extJunit" }
+espresso_core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+compose_ui_test = { group = "androidx.compose.ui", name = "ui-test-junit4", version.ref = "composeUiTest" }
+compose_ui_test_manifest = { group = "androidx.compose.ui", name = "ui-test-manifest", version.ref = "composeUiTest" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+google-services = { id = "com.google.gms.google-services", version = "4.4.1" }
